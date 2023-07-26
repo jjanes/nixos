@@ -188,6 +188,7 @@ users.defaultUserShell = pkgs.fish;
    channel = "https://nixos.org/channels/nixos-23.05";
   };
 
+  services.flatpak.enable = true;
 
   nix = {
     package = pkgs.nixFlakes;
