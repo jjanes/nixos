@@ -118,6 +118,9 @@ programs.steam = {
       firefox
       alacritty
       kitty
+      yadm
+      nodejs
+      go
       vlc
       discord
       brave
