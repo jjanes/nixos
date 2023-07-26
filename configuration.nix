@@ -115,6 +115,7 @@ programs.steam = {
       vlc
       discord
       brave
+      _1password-gui
       veracrypt
       neovim
       kate
