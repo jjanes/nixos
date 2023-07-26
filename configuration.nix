@@ -104,6 +104,10 @@ programs.steam = {
   dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
 };
 
+  networking.extraHosts =
+  ''
+    10.0.0.192 hades
+  '';
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.john = {
@@ -112,6 +116,8 @@ programs.steam = {
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       firefox
+      alacritty
+      kitty
       vlc
       discord
       brave
