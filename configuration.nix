@@ -16,6 +16,8 @@
   boot.loader.grub.useOSProber = true;
   boot.supportedFilesystems = [ "ntfs" ];
 
+
+
   # Setup keyfile
   boot.initrd.secrets = {
     "/crypto_keyfile.bin" = null;
@@ -55,6 +57,8 @@
 
   # Enable the X11 windowing system.
   services.xserver.enable = true;
+
+
 
   # Enable the KDE Plasma Desktop Environment.
   services.xserver.displayManager.sddm.enable = true;
@@ -107,6 +111,7 @@ programs.steam = {
   networking.extraHosts =
   ''
     10.0.0.192 hades
+    10.0.0.180 dreztv
   '';
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
@@ -123,6 +128,7 @@ programs.steam = {
       go
       vlc
       discord
+      obsidian
       brave
       _1password-gui
       veracrypt
@@ -149,10 +155,12 @@ users.defaultUserShell = pkgs.fish;
     htop 
     neovim 
     fish
+    tldr
     vim
     tmux
     discord
     neofetch 
+    docker
     git 
   ];
 
